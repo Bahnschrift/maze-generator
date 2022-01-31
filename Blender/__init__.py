@@ -1,7 +1,13 @@
 bl_info = {
     "name": "Maze Generator",
+    "description": "Generate random mazes",
+    "author": "Bahnschrift",
+    "version": (1, 0),
     "blender": (2, 90, 0),
     "category": "Add Mesh",
+    "location": "View3D > Add > Mesh",
+    "doc_url": "https://github.com/Bahnschrift/maze-generator",
+    "tracker_url": "https://github.com/Bahnschrift/maze-generator/issues"
 }
 
 
