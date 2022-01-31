@@ -22,3 +22,5 @@ cp -r Blender/ <Blender add-on directory>/maze-generator/
 
 ### Usage
 - In Blender, select Add > Mesh > Maze
+
+![](https://i.imgur.com/JtKSHfp.jpg)
