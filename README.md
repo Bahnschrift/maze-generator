@@ -5,7 +5,7 @@ A web-based maze generator written in typescript and a Blender addon.
 ## Web
 [the412law.me/maze-generator/](https://the412law.me/maze-generator/)
 
-![](https://i.imgur.com/okdVSam.png)
+![](https://i.imgur.com/b353lBd.png)
 
 ## Blender Addon
 ### Installation
