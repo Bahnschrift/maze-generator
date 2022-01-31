@@ -542,8 +542,10 @@ function sidewinder(height, width) {
 function drawMaze(grid, scale, canvas, wallHex, airHex) {
     let ctx = canvas.getContext("2d");
     let gridStr = grid.toStr("*", " ").split("\n");
+    console.log(typeof (gridStr));
+    console.log(gridStr[0].length);
     ctx.fillStyle = airHex;
-    ctx.fillRect(0, 0, gridStr.length * scale, gridStr[0].length * scale);
+    ctx.fillRect(0, 0, gridStr[0].length * scale, gridStr.length * scale);
     ctx.fillStyle = wallHex;
     for (let x = 0; x < gridStr.length; x++) {
         for (let y = 0; y < gridStr[x].length; y++) {
