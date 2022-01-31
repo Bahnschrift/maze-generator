@@ -1,0 +1,118 @@
+html {
+    background-color: #E0E1DC;
+}
+
+.content {
+    overflow: hidden;
+    position: relative;
+}
+
+.content:before {
+    content: "";
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: -1;
+    margin: -17px -17px -17px -17px;
+
+    display: block;
+    background-image: url('image/background.png');
+    background-size: cover;
+    width: 105%;
+    height: 105%;
+    opacity: 0.05;
+    image-rendering: pixelated;
+}
+
+br {
+    display: block;
+    margin: 100px, 0;
+    line-height: 100px;
+}
+
+.content .header {
+    top: 0;
+    background: rgb(180, 180, 180);
+    background: rgba(180, 180, 180, 0.7);
+    width: black;
+    text-align: center;
+    font-size: 200%;
+    padding: 15px;
+    background-clip: padding-box;
+}
+
+h1, h2 {
+    opacity: 2;
+    font-family: 'Arial Rounded MT', 'Arial Rounded MT Bold', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+label, input, button {
+    font-family: -apple-system, BlinkMacSystemFont, Roboto, Oxygen-Sans, Ubuntu, 'Segoe UI', Cantarell, 'Helvetica Neue', sans-serif;
+}
+
+#sizex, #sizey {
+    width: 50px;
+}
+
+#scale {
+    width: 100px;
+}
+
+input[type="submit"], input[type="button"] {
+    font-weight: 500;
+}
+
+.column {
+    float: left;
+    width: 50%;
+}
+
+form {
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+    border: 5px outset green;
+    background-color: #E0E1DC;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.outtext {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bolder;
+}
+
+#outcanvas {
+    display: none;
+}
+
+#outimage, #outsvg {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    image-rendering: pixelated;
+}
+
+.outsection {
+    width: 100%;
+    margin: 0 auto;
+    white-space: nowrap;
+    overflow-x: scroll;
+}
+
+.outarea {
+    width: 100%;
+}
+
+.coloursettings label {
+    min-width: 120px;
+    display: inline-block;
+}

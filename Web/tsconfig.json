@@ -1,0 +1,14 @@
+{
+    "compilerOptions": {
+        "lib": ["es6", "dom", "es2017"],
+        "target": "es2020",
+        "module": "es2020",
+        "sourceMap": false,
+        "removeComments": true,
+        "strict": true,
+        "outDir": "js/"
+    },
+    "include": [
+        "ts/"
+    ]
+  }

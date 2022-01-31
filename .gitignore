@@ -1,0 +1,4 @@
+.vscode/
+linting/
+node_modules/
+__pycache__/
