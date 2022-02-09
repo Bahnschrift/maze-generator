@@ -1,5 +1,4 @@
 import { Grid } from "./grid";
-import { Cell } from "./cell";
 
 
 const canvas = <HTMLCanvasElement>document.getElementById("outcanvas");
