@@ -7,8 +7,7 @@
         <title>Maze Generator</title>
         <link rel="stylesheet" href="index.css">
         <link rel="shortcut icon" type="image/png" href="image/icon.png"/>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <script src="js/main.js"></script>
+        <script type="module" src="js/main.js"></script>
     </head>
 
     <body>
@@ -47,15 +46,12 @@
                         <input type="radio" id="prims" class="generator" name="generator" value="prims" required>
                         <label for="prims" id="prims" class="generator">Prim's</label>
                         <br>
-                        <input type="radio" id="random" class="generator" name="generator" value="random" required>
-                        <label for="random" id="random" class="generator">Random</label>
-                        <br>
                         <input type="radio" id="recursivedivision" class="generator" name="generator" value="recursivedivision" required>
                         <label for="recursivedivision" id="recursivedivision" class="generator">Recursive Division</label>
                         <br>
                         <input type="radio" id="sidewinder" class="generator" name="generator" value="sidewinder" required>
                         <label for="sidewinder" id="sidewinder" class="generator">Sidewinder</label>
-                        <div class="growingtreeoptions" hidden>
+                        <div id="growingtreeoptions" hidden>
                             <br>
                             <label>Growing tree frequencies</label>
                             <br>
@@ -78,11 +74,11 @@
                             <label for="wallcolour" id="wallcolour">Wall colour:</label>
                             <input type="color" id="wallcolour" name="wallcolour" value="#000000" required>
                             <br>
-                            <label for="aircolour" id="aircolour">Gap colour: </label>
-                            <input type="color" id="aircolour" name="aircolour" value="#FFFFFF" required>
+                            <label for="blankcolour" id="blankcolour">Gap colour: </label>
+                            <input type="color" id="blankcolour" name="blankcolour" value="#FFFFFF" required>
                             <br>
-                            <label for="solcolour" id="solcolour">Solution colour: </label>
-                            <input type="color" id="solcolour" name="solcolour" value="#FF0000" required>
+                            <label for="solutioncolour" id="solutioncolour">Solution colour: </label>
+                            <input type="color" id="solutioncolour" name="solutioncolour" value="#FF0000" required>
                             <br>
                             <input type="checkbox" id="rainbowsol" name="rainbowsol" value="true">
                             <label for="rainbowsol" id="rainbowsol">Rainbow solution </label>
@@ -97,8 +93,8 @@
                 </div>
             </form>
             <br>
-            <section class="outsection" hidden>
-                <div class="outarea">
+            <section id="outsection" hidden>
+                <div id="outarea">
                     <canvas id="outcanvas" width="200" height="200" style="border: 2px solid green;"></canvas>
                     <img id="outimage" src="" height="200" alt="maze" hidden>
                 </div>
